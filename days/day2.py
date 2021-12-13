@@ -3,7 +3,7 @@ import pandas as pd
 
 
 base_path = os.path.dirname(__file__)
-file_path = os.path.join(base_path, 'data/day2.csv')
+file_path = os.path.abspath(os.path.join(base_path, '..', 'data/day2.csv'))
 
 data = pd.read_csv(file_path, header=None)
 
