@@ -33,7 +33,6 @@ print(f'Dept position: {y}')
 
 print(f'x * y = {x * y}')
 
-
 # +--------------+
 # |   Puzzle 2   |
 # +--------------+
