@@ -13,27 +13,6 @@ for fld in folds[:, 2]:
     ax, idx = fld.strip().split('=')
     fold_lst += [(ax, int(idx))]
 
-# values = np.array(['6,10',
-#                    '0,14',
-#                    '9,10',
-#                    '0,3',
-#                    '10,4',
-#                    '4,11',
-#                    '6,0',
-#                    '6,12',
-#                    '4,1',
-#                    '0,13',
-#                    '10,12',
-#                    '3,4',
-#                    '3,0',
-#                    '8,4',
-#                    '1,10',
-#                    '2,14',
-#                    '8,10',
-#                    '9,0'])
-
-# fold_lst = [('y', 7), ('x', 5)]
-
 x_arr = []
 y_arr = []
 for s in values:
@@ -91,11 +70,9 @@ def fold_x(mat, x_idx):
     return mat_mrg
 
 
-# mat_f1 = fold_y(mat, 7)
-# np.nansum(mat_f1)
-
-# mat_f2 = fold_x(mat_f1, 5)
-# np.nansum(mat_f2)
+# +------------------+
+# |   Puzzle 1 + 2   |
+# +------------------+
 
 mat_new = np.copy(mat)
 

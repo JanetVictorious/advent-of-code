@@ -37,5 +37,9 @@ def solve(t):
     return ans
 
 
+# +------------------+
+# |   Puzzle 1 + 2   |
+# +------------------+
+
 print(solve(True))
 print(solve(False))
