@@ -38,3 +38,4 @@ def solve(t):
 
 
 print(solve(True))
+print(solve(False))
