@@ -14,6 +14,10 @@ val_arr = []
 for v in values:
     D[v[0]] = v[2]
 
+# +------------------+
+# |   Puzzle 1 + 2   |
+# +------------------+
+
 S = deque()
 for i in range(len(T) - 1):
     S.append(str(T[i:i+2]))
