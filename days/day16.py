@@ -77,7 +77,11 @@ def solve(bits, i, indent):
             assert False, typ
 
 
+# +------------------+
+# |   Puzzle 1 + 2   |
+# +------------------+
+
 value, next_i = solve(binary, 0, 0)
-assert len(binary)-4 < next_i <= len(binary)
+assert len(binary) - 4 < next_i <= len(binary)
 print(p1)
 print(value)
