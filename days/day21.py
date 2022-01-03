@@ -1,5 +1,4 @@
-from collections import OrderedDict, deque, Counter
-from itertools import permutations
+from collections import deque
 
 pl1 = 10
 pl2 = 7
