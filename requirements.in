@@ -5,3 +5,4 @@ jupyter~=1.0
 matplotlib>=3.4.0, <3.4.3
 seaborn~=0.11
 pyinstrument~=4.0
+pillow>=9.0.0
