@@ -12,14 +12,20 @@ argon2-cffi==21.3.0
     # via notebook
 argon2-cffi-bindings==21.2.0
     # via argon2-cffi
+asttokens==2.0.5
+    # via stack-data
 attrs==21.2.0
     # via jsonschema
 backcall==0.2.0
+    # via ipython
+black==21.12b0
     # via ipython
 bleach==4.1.0
     # via nbconvert
 cffi==1.15.0
     # via argon2-cffi-bindings
+click==8.0.3
+    # via black
 cycler==0.11.0
     # via matplotlib
 debugpy==1.5.1
@@ -32,6 +38,8 @@ entrypoints==0.3
     # via
     #   jupyter-client
     #   nbconvert
+executing==0.8.2
+    # via stack-data
 flake8==3.9.2
     # via -r requirements.in
 importlib-resources==5.4.0
@@ -43,8 +51,9 @@ ipykernel==6.6.0
     #   jupyter-console
     #   notebook
     #   qtconsole
-ipython==7.30.1
+ipython==8.0.1
     # via
+    #   -r requirements.in
     #   ipykernel
     #   ipywidgets
     #   jupyter-console
@@ -105,7 +114,9 @@ mistune==0.8.4
 mypy==0.910
     # via -r requirements.in
 mypy-extensions==0.4.3
-    # via mypy
+    # via
+    #   black
+    #   mypy
 nbclient==0.5.9
     # via nbconvert
 nbconvert==6.3.0
@@ -143,6 +154,8 @@ pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
+pathspec==0.9.0
+    # via black
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
@@ -151,6 +164,8 @@ pillow==9.0.0
     # via
     #   -r requirements.in
     #   matplotlib
+platformdirs==2.4.1
+    # via black
 prometheus-client==0.12.0
     # via notebook
 prompt-toolkit==3.0.24
@@ -161,6 +176,8 @@ ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
+pure-eval==0.2.2
+    # via stack-data
 pycodestyle==2.7.0
     # via flake8
 pycparser==2.21
@@ -206,14 +223,19 @@ send2trash==1.8.0
     # via notebook
 six==1.16.0
     # via
+    #   asttokens
     #   bleach
     #   python-dateutil
+stack-data==0.1.4
+    # via ipython
 terminado==0.12.1
     # via notebook
 testpath==0.5.0
     # via nbconvert
 toml==0.10.2
     # via mypy
+tomli==1.2.3
+    # via black
 tornado==6.1
     # via
     #   ipykernel
@@ -234,7 +256,9 @@ traitlets==5.1.1
     #   notebook
     #   qtconsole
 typing-extensions==4.0.1
-    # via mypy
+    # via
+    #   black
+    #   mypy
 wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
