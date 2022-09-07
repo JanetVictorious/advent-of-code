@@ -42,7 +42,6 @@ def p1(cntr, **kwargs):
 if __name__ == '__main__':
     # Parse input data
     S = open(FILE_PATH, 'r').read()
-    X = [int(x) for x in S.split(',')]
     C = Counter([int(x) for x in S.split(',')])
 
     print(p1(C))
