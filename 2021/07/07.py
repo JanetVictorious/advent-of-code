@@ -39,13 +39,6 @@ def p1(cntr, **kwargs):
     return min(P, key=P.get), min(P.values())
 
 
-def p2(lst):
-    start, stop = min(lst), max(lst)
-    P = {}
-    for i in range(start, stop+1):
-        P[i] = 0
-
-
 if __name__ == '__main__':
     # Parse input data
     S = open(FILE_PATH, 'r').read()
