@@ -13,13 +13,14 @@ _fuel_cache[1] = 1
 def _fuel_sum(n, puzzle=1):
     if puzzle == 1:
         return n
-    return sum([v for v in range(n+1)])
-    # if n in [0, 1]:
-    #     return n
-    # if n in _fuel_cache:
-    #     return _fuel_cache[n]
-    # _fuel_cache[n] = n + _fuel_sum(n-1, puzzle)
-    # return _fuel_cache[n]
+
+    if n in [0, 1]:
+        return n
+
+    if n in _fuel_cache:
+        return _fuel_cache[n]
+    _fuel_cache[n] = sum([v for v in range(n+1)])
+    return _fuel_cache[n]
 
 
 def p1(cntr, **kwargs):
