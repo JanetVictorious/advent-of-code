@@ -17,13 +17,12 @@ def p1(m, c, iter: int = 40):
             CF = Counter()
             for k in c:
                 CF[k[0]] += c[k]
-            # CF[k[1]] += 1
             CF[S[-1]] += 1
-            # diff = max(CF.values()) - min(CF.values())
+            diff = max(CF.values()) - min(CF.values())
             if i == 9:
-                diff10 = max(CF.values()) - min(CF.values())
+                diff10 = diff
             elif i == 39:
-                diff40 = max(CF.values()) - min(CF.values())
+                diff40 = diff
     return diff10, diff40
 
 
