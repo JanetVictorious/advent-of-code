@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flake8 = {version=">=4.0.0, <5.0.4"}
+mypy = {version="~=0.950"}
+
+[requires]
+python_version = "3.10"
