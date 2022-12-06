@@ -2,7 +2,7 @@ import os
 from collections import deque
 
 BASE_PATH = os.path.dirname(__file__)
-FILE_PATH = os.path.abspath(os.path.join(BASE_PATH, '03.testin'))
+FILE_PATH = os.path.abspath(os.path.join(BASE_PATH, '03.in'))
 
 
 def p1(S):
