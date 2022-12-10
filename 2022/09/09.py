@@ -31,7 +31,6 @@ def p1(S):
     H = (0, 0)
     T1.add(start)
     T2.add(start)
-    t = (0, 0)
     for s in S:
         d, m = s
         for _ in range(int(m)):
