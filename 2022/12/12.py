@@ -9,11 +9,13 @@ DR = [-1, 0, 1, 0]
 DC = [0, 1, 0, -1]
 
 
-def p1(S):
+def p1(S, part=1):
     Q = deque()
     for r in range(NR):
         for c in range(NC):
-            if (r, c) == START:
+            if (r, c) == START and part == 1:
+                Q.append((0, (r, c)))
+            elif ((r, c) == START or S[r, c] == 1) and part == 2:
                 Q.append((0, (r, c)))
 
     Z = set()
@@ -53,3 +55,4 @@ if __name__ == '__main__':
             else:
                 XS[i, j] = L[val]
     print(p1(XS))
+    print(p1(XS, part=2))
