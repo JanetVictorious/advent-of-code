@@ -1,7 +1,5 @@
 import os
 from collections import deque
-from itertools import combinations
-from copy import deepcopy
 
 BASE_PATH = os.path.dirname(__file__)
 FILE_PATH = os.path.abspath(os.path.join(BASE_PATH, '16.in'))
